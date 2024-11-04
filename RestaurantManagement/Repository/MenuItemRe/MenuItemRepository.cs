@@ -6,9 +6,9 @@ using RestaurantManagement.Models.Data;
 
 namespace RestaurantManagement.Repository.MenuItemRe
 {
-    public class MenuItemRepositry : Repository<MenuItem>, IMenuItemRepositry
+    public class MenuItemRepository : Repository<MenuItem>, IMenuItemRepository
     {
-        public MenuItemRepositry(ApplicationDbcontext dbcontext) : base(dbcontext)
+        public MenuItemRepository(ApplicationDbcontext dbcontext) : base(dbcontext)
         {
         }
 

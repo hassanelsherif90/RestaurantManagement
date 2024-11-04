@@ -25,7 +25,7 @@ namespace RestaurantManagement
 
             builder.Services.AddDbContext<ApplicationDbcontext>(options =>
             {
-                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")).UseLazyLoadingProxies();
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));//.UseLazyLoadingProxies();
 
             });
 
@@ -33,7 +33,7 @@ namespace RestaurantManagement
             builder.Services.AddScoped<IOrderRepository, OrderRepository>();
             builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
             builder.Services.AddScoped<IInventoryRepository, InventoryRepository>();
-            builder.Services.AddScoped<IMenuItemRepositry, MenuItemRepositry>();
+            builder.Services.AddScoped<IMenuItemRepository, MenuItemRepository>();
             builder.Services.AddScoped<IReservationRepository, ReservationRepository>();
             builder.Services.AddScoped<ISupplierRepository, SupplierRepository>();
             builder.Services.AddScoped<ITableRepository, TableRepository>();

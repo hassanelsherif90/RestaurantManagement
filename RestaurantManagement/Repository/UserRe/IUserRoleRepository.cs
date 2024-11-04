@@ -2,7 +2,7 @@
 
 namespace RestaurantManagement.Repository.UserRe
 {
-    public interface IUserRoleUserRole : IRepository<UserRole>
+    public interface IUserRoleRepository : IRepository<UserRole>
     {
     }
 }

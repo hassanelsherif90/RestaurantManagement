@@ -3,9 +3,9 @@ using RestaurantManagement.Models.Data;
 
 namespace RestaurantManagement.Repository.UserRe
 {
-    public class UserRoleUserRole : Repository<UserRole>, IUserRoleUserRole
+    public class UserRoleRepository : Repository<UserRole>, IUserRoleRepository
     {
-        public UserRoleUserRole(ApplicationDbcontext dbcontext) : base(dbcontext)
+        public UserRoleRepository(ApplicationDbcontext dbcontext) : base(dbcontext)
         {
         }
     }

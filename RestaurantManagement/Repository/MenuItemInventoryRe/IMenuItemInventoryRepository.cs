@@ -2,7 +2,7 @@
 
 namespace RestaurantManagement.Repository.MenuItemInventoryRe
 {
-    public interface IMenuItemInventoryRepositry : IRepository<MenuItemInventory>
+    public interface IMenuItemInventoryRepository : IRepository<MenuItemInventory>
     {
     }
 }

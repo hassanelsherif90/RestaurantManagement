@@ -2,7 +2,7 @@
 
 namespace RestaurantManagement.Repository.MenuItemRe
 {
-    public interface IMenuItemRepositry : IRepository<MenuItem>
+    public interface IMenuItemRepository : IRepository<MenuItem>
     {
         Task<IEnumerable<MenuItem>> GetAvavilableItems();
         Task<MenuItem> GetMenuItemWithDetails(int menuItemId);
